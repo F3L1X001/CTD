@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,400;1,400&display=swap');
+
+@import url("https://use.fontawesome.com/releases/v6.1.1/css/all.css");
+
+:root {
+    --firstColor: #F3603B;
+    --secondColor: #000000;
+    --thirdColor: #B3B2B7;
+    --fourthColor:#3F4868;
+    --fifthColor: #B9B9C1;
+    --sixthColor: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-style: normal;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Header Start */
+
+.header {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4rem 10rem;
+    width: 100%;
+}
+
+.header__ul {
+    color: #242E52;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 500;
+    gap: 1.8rem;
+}
+
+.button {
+    background-color: var(--firstColor);
+    border: var(--firstColor);
+    border-radius: 3rem;
+    box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+    color: var(--sixthColor);
+    padding: 0.8rem 1.8rem;
+}
+
+.burger {
+    display: none;
+}
+
+/* Header End */
+/* Main Start */
+
+.main{
+    width: 100%;
+}
+
+/* Main Section Combined Selector */
+
+.firstSection, .secondSection {
+    display: flex;
+/*     flex-wrap: wrap; */
+    padding: 2.5rem 9rem 0rem 10rem;
+}
+
+.firstSection__info, .secondSection__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    max-width: 45%;
+}
+
+.firstSection__info p, .secondSection__info p {
+    align-items: center;
+    color: #000000;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* firstSection Start*/
+
+.firstSection {
+    gap: 6.8rem;
+}
+
+.firstSection__info {
+    padding: 4.4rem 0rem 8.6rem 0rem;
+}
+
+.firstSection__info h1 {
+    align-items: center;
+    color: #232C50;
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+.firstSection__info p {
+    gap: 1.6rem;
+    line-height: 1.6rem;
+    padding-right: 5.5rem;
+}
+
+.firstSection .button {
+    width: 9.5rem;
+}
+
+.firstSection__graphs{
+    max-width:45%;
+}
+
+.firstSection__graphs img {
+    object-fit: contain;
+}
+
+
+/* firstSection End */
+/* secondSection Start */
+
+.secondSection{
+    gap: 7.8rem;
+}
+
+.secondSection__info h2 {
+    align-items: center;
+    color: #232851;
+    line-height: 2.5rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.secondSection__info p{
+    gap: 2.2rem;
+    line-height: 1.5rem;
+    padding-right: 6rem;
+}
+
+.secondSection__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2.6rem;
+    max-width: 45%;
+}
+
+.secondSection__item {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+}
+
+.secondSection__orderItem {
+    background-color: var(--firstColor);
+    border-radius: 1.8rem;
+    color: var(--sixthColor);
+    font-size: 1rem;
+    font-weight: 700;
+    height: fit-content;
+    padding: 0.7rem 1.5rem;
+}
+
+.secondSection__itemInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.secondSection__itemInfo h4{
+    color: #323851;
+    line-height: 1.5rem;
+    padding: 0.4rem 13rem 1.1rem 0rem;
+}
+
+.secondSection__itemInfo p{
+    color: var(--thirdColor);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+/* secondSection End */
+/* thirdSection Start */
+
+.thirdSection {
+    margin: 7.7rem 4.4rem 11rem 4.4rem;
+    width: 100%;
+}
+
+.thirdSection h2 {
+    color: #242E53;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3.8rem;
+    text-align: center;
+    width: 95%;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content:center;
+    padding: 4.6rem 0rem 3.8rem 0rem;
+}
+
+.card {
+    padding-top: 4.6rem;
+    width: 30%;
+}
+
+.card__header {
+    position: relative;
+    width: 100%;    
+}
+
+.card__photo {
+    position: absolute;
+    bottom: -2rem;
+    left: 40%;
+    height: 4.1rem;
+    width: 4.1rem;  
+}
+
+.card__body {
+    align-items: center;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1.3rem;
+    width: 90%;
+}
+
+.card__body h5 {
+    color: var(--fourthColor);
+    font-size: 1rem;
+    font-weight: 700;
+    padding-top: 3.5rem;
+}
+
+.thirdSection a {
+position: relative;
+left: 45%;
+}
+
+/* End thirdSection */
+/* fourthSection Start*/
+
+.fourthSection{
+    align-items: center;
+    background-color: #F3613C;
+    color: var(--sixthColor);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4rem 10.3rem 4rem 10.3rem;
+}
+
+.fourthSection h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    width: 27.3rem;
+}
+
+.buttonInverted {
+    background-color: var(--sixthColor);
+    border: var(--sixthColor);
+    border-radius: 3rem;
+    box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+    color: var(--firstColor);
+    padding: 0.8rem 1.8rem;
+}
+
+/* fourthSection End */
+/* footer Start */
+
+.footer {
+    background-color: #1E1E26;
+    color: var(--sixthColor);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}/* revisar */
+
+
+.footer__logoTitle{
+    padding: 4.2rem 8.4rem 4.15rem 12.2rem;
+}
+
+.footer__icons{
+    display: flex;
+    padding: 0rem 7.9rem 4.2rem 10.65rem;
+    justify-content: space-between;
+}/* revisar */
+
+
+.footer__linkSection{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 13.7rem;
+    margin:  3.3rem 0rem;
+}
+
+.footer__linksList1 li, .footer__linksList2 li {
+    padding-bottom: 0.75rem;
+}
+
+.footer__updateSection{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 3.4rem 10.3rem 0rem 9.9rem;
+    gap: 4.5rem;
+}
+
+.footer__updateSection input {
+    border-radius: 3.1rem;
+    padding: 0.62rem
+}
+
+.footer__updateSection p{
+    color: #8C8C94;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding-left:  3.7rem;
+    padding-bottom: 3.3rem;
+}/* revisar */
