@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manage</title>
+    <title>Proyecto Final FE1 Felix Andres</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -52,39 +52,45 @@
             </article>
             <section class="secondSection__list">
                 <article class="secondSection__item">
-                    <div class="secondSection__orderItem">
-                        01
+                    <div class="secondSection__itemOrder">
+                        <p>01</p>
                     </div>
-                    <div class="secondSection__itemInfo">
+                    <div class="secondSection__itemTitle">
                         <h4>
                             Track company-wide progress
                         </h4>
+                    </div>
+                    <div class="secondSection__itemInfo">
                         <p>
                             See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again. 
                         </p>
                     </div>
                 </article>
                 <article class="secondSection__item">
-                    <div class="secondSection__orderItem">
-                        02
+                    <div class="secondSection__itemOrder">
+                        <p>02</p>
                     </div>
-                    <div class="secondSection__itemInfo">
+                    <div class="secondSection__itemTitle">
                         <h4>
                             Advance built-in reports
                         </h4>
+                    </div>
+                    <div class="secondSection__itemInfo">
                         <p>
                             Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.
                         </p>
                     </div>
                 </article>
                 <article class="secondSection__item">
-                    <div class="secondSection__orderItem">
-                        03
+                    <div class="secondSection__itemOrder">
+                        <p>03</p>
                     </div>
-                    <div class="secondSection__itemInfo">
+                    <div class="secondSection__itemTitle">
                         <h4>
                             Everything you need in one place
                         </h4>
+                    </div>
+                    <div class="secondSection__itemInfo">
                         <p>
                             Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.
                         </p>
@@ -133,38 +139,41 @@
         </section>
     </main>
     <footer class="footer">
-        <section class="footer__logoSection">
-            <div class="footer__logoTitle">
-                <img src="img/logoword_footer.png" alt="logo">
-            </div>
-            <div class="footer__icons">
-                <i class="fa-brands fa-facebook-square"></i>
-                <i class="fa-brands fa-youtube"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-pinterest"></i>
-                <i class="fa-brands fa-instagram-square"></i>
-            </div>
-        </section>
-        <section class="footer__linkSection">
-            <ul class="footer__linksList1">
-                <li>Home</li>
-                <li>Pricing</li>
-                <li>Products</li>
-                <li>About Us</li>
-            </ul>
-            <ul class="footer__linksList2">    
-                <li>Careers</li>
-                <li>Community</li>
-                <li>Privacy Policy</li>
-            </ul>
-        </section>
-        <section class="footer__updateSection">
-            <form action="./update" method="POST" class="footer__form">
-                <input type="text" placeholder="Update in your inbox...">
-                <button class="button">Go</button>
-            </form>
-            <p class="footer__copyright">Copyright 2020. All Rights Reserved</p>
-        </section>
+        <Section class="footer__principal">
+            <section class="footer__logoSection">
+                <div class="footer__logoTitle">
+                    <img src="img/logo_footer.png" alt="logo">
+                </div>
+                <div class="footer__icons">
+                    <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                </div>
+            </section>
+            <section class="footer__linkSection">
+                <ul class="footer__linksList1">
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>Pricing</li></a>
+                    <a href="#"><li>Products</li></a>
+                    <a href="#"><li>About Us</li></a>
+                </ul>
+                <ul class="footer__linksList2">    
+                    <a href="#"><li>Careers</li></a>
+                    <a href="#"><li>Community</li></a>
+                    <a href="#"><li>Privacy Policy</li></a>
+                </ul>
+            </section>
+            <section class="footer__updateSection">
+                <form action="./update" method="POST" class="footer__form">
+                    <input type="email" name="update" id="update" placeholder="Update your email..." required>
+                    <button type="submit" class="button">Go</button>
+                </form>
+                
+            </section>
+        </Section>
+        <p class="footer__copyright">Copyright 2020. All Rights Reserved</p>
     </footer>
 </body>
 </html>

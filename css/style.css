@@ -3,12 +3,13 @@
 @import url("https://use.fontawesome.com/releases/v6.1.1/css/all.css");
 
 :root {
-    --firstColor: #F3603B;
-    --secondColor: #000000;
-    --thirdColor: #B3B2B7;
-    --fourthColor:#3F4868;
-    --fifthColor: #B9B9C1;
-    --sixthColor: #FFFFFF;
+    --firstColor: rgb(242, 95, 58);
+    --secondColor: rgb(35, 44, 81);
+    --thirdColor: rgb(143, 148, 167);
+    --fourthColor:#1E1E26;
+    --fifthColor: #FFFFFF;
+    --sixthColor: rgb(255, 239, 234);
+
 }
 
 * {
@@ -18,7 +19,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    text-decoration: none;
+    text-decoration:none;
 }
 
 /* Header Start */
@@ -33,11 +34,18 @@
 }
 
 .header__ul {
-    color: #242E52;
     display: flex;
     flex-wrap: wrap;
-    font-weight: 500;
     gap: 1.8rem;
+}
+
+.header__ul a{
+    color: var(--secondColor);
+    font-weight: 500;
+}
+
+.header__ul a:hover {
+    opacity: 0.5;
 }
 
 .button {
@@ -45,12 +53,20 @@
     border: var(--firstColor);
     border-radius: 3rem;
     box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
-    color: var(--sixthColor);
+    color: var(--fifthColor);
     padding: 0.8rem 1.8rem;
+}
+
+.button:hover {
+    opacity: 0.5;
 }
 
 .burger {
     display: none;
+}
+
+.header__logo, .header__nav, .header div {
+    padding: 2rem;
 }
 
 /* Header End */
@@ -64,20 +80,18 @@
 
 .firstSection, .secondSection {
     display: flex;
-/*     flex-wrap: wrap; */
-    padding: 2.5rem 9rem 0rem 10rem;
 }
 
 .firstSection__info, .secondSection__info {
     display: flex;
     flex-direction: column;
     gap: 1.8rem;
-    max-width: 45%;
+    width: 45%;
 }
 
 .firstSection__info p, .secondSection__info p {
     align-items: center;
-    color: #000000;
+    color: var(--thirdColor);
     font-weight: 500;
     font-size: 1rem;
 }
@@ -86,6 +100,7 @@
 
 .firstSection {
     gap: 6.8rem;
+    padding: 2.5rem 9rem 0rem 10rem;
 }
 
 .firstSection__info {
@@ -93,8 +108,8 @@
 }
 
 .firstSection__info h1 {
-    align-items: center;
-    color: #232C50;
+
+    color: var(--secondColor);
     font-size: 3.6rem;
     font-weight: 700;
     line-height: 4rem;
@@ -111,11 +126,12 @@
 }
 
 .firstSection__graphs{
-    max-width:45%;
+    width:45%;
 }
 
 .firstSection__graphs img {
-    object-fit: contain;
+    object-fit:cover;
+    max-width: 100%;
 }
 
 
@@ -124,11 +140,12 @@
 
 .secondSection{
     gap: 7.8rem;
+    padding: 2.5rem 9rem 0rem 9rem;
 }
 
 .secondSection__info h2 {
-    align-items: center;
-    color: #232851;
+
+    color: var(--secondColor);
     line-height: 2.5rem;
     font-size: 2.2rem;
     font-weight: 700;
@@ -145,19 +162,18 @@
     flex-direction: column;
     flex-wrap: wrap;
     gap: 2.6rem;
-    max-width: 45%;
+    width: 45%;
 }
 
 .secondSection__item {
     display: flex;
-    flex-wrap: nowrap;
-    gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
-.secondSection__orderItem {
+.secondSection__itemOrder {
     background-color: var(--firstColor);
     border-radius: 1.8rem;
-    color: var(--sixthColor);
+    color: var(--fifthColor);
     font-size: 1rem;
     font-weight: 700;
     height: fit-content;
@@ -165,17 +181,16 @@
 }
 
 .secondSection__itemInfo {
-    display: flex;
-    flex-direction: column;
+    padding-left: 5.8rem;
 }
 
-.secondSection__itemInfo h4{
-    color: #323851;
+.secondSection__itemTitle{
+    color: var(--secondColor);
     line-height: 1.5rem;
-    padding: 0.4rem 13rem 1.1rem 0rem;
+    padding: 0.4rem 1.5rem 1.1rem 1.5rem;
 }
 
-.secondSection__itemInfo p{
+.secondSection__itemInfo {
     color: var(--thirdColor);
     font-size: 1rem;
     font-weight: 500;
@@ -186,7 +201,7 @@
 /* thirdSection Start */
 
 .thirdSection {
-    margin: 7.7rem 4.4rem 11rem 4.4rem;
+    padding: 7.7rem 4.4rem 11rem 4.4rem;
     width: 100%;
 }
 
@@ -201,7 +216,6 @@
 
 .cardContainer {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content:center;
@@ -229,6 +243,7 @@
 .card__body {
     align-items: center;
     background-color: #FAFAFA;
+    color: var(--thirdColor);
     display: flex;
     flex-flow: column wrap;
     gap: 1.3rem;
@@ -236,15 +251,15 @@
 }
 
 .card__body h5 {
-    color: var(--fourthColor);
+    color: var(--secondColor);
     font-size: 1rem;
     font-weight: 700;
     padding-top: 3.5rem;
 }
 
 .thirdSection a {
-position: relative;
-left: 45%;
+    position: relative;
+    left: 45%;
 }
 
 /* End thirdSection */
@@ -252,8 +267,8 @@ left: 45%;
 
 .fourthSection{
     align-items: center;
-    background-color: #F3613C;
-    color: var(--sixthColor);
+    background-color: var(--firstColor);
+    color: var(--fifthColor);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -263,57 +278,62 @@ left: 45%;
 .fourthSection h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    width: 27.3rem;
+    width: 45%;
 }
 
 .buttonInverted {
-    background-color: var(--sixthColor);
-    border: var(--sixthColor);
+    background-color: var(--fifthColor);
+    border: var(--fifthColor);
     border-radius: 3rem;
     box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
     color: var(--firstColor);
     padding: 0.8rem 1.8rem;
 }
 
+.buttonInverted:hover {
+    opacity: 0.5;
+}
+
 /* fourthSection End */
 /* footer Start */
 
 .footer {
-    background-color: #1E1E26;
-    color: var(--sixthColor);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    background-color: var(--fourthColor);
+    color: var(--fifthColor);
+    padding: 3.3rem 10.3rem 3.3rem 10.7rem;
 }/* revisar */
 
+.footer__principal {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
 
 .footer__logoTitle{
-    padding: 4.2rem 8.4rem 4.15rem 12.2rem;
+    padding-top: 0.7rem;
 }
 
 .footer__icons{
     display: flex;
-    padding: 0rem 7.9rem 4.2rem 10.65rem;
     justify-content: space-between;
-}/* revisar */
+    padding-top: 4rem;
+}
 
+.footer__icons a, .footer__linksList1 a, .footer__linksList2 a{
+    color: var(--fifthColor);
+}
 
 .footer__linkSection{
     display: flex;
-    flex-flow: row nowrap;
     gap: 13.7rem;
-    margin:  3.3rem 0rem;
 }
 
 .footer__linksList1 li, .footer__linksList2 li {
     padding-bottom: 0.75rem;
 }
 
-.footer__updateSection{
-    display: flex;
-    flex-flow: column wrap;
-    padding: 3.4rem 10.3rem 0rem 9.9rem;
-    gap: 4.5rem;
+.footer__linksList1 li:active, .footer__linksList2 li:active, .footer__icons i:active{
+    color: var(--firstColor);
 }
 
 .footer__updateSection input {
@@ -321,10 +341,214 @@ left: 45%;
     padding: 0.62rem
 }
 
-.footer__updateSection p{
-    color: #8C8C94;
+.footer__updateSection input::placeholder {
+    color: var(--firstColor);
+}
+
+.footer p{
+    color: var(--thirdColor);
     font-size: 0.8rem;
     font-weight: 500;
-    padding-left:  3.7rem;
-    padding-bottom: 3.3rem;
-}/* revisar */
+    text-align: right;
+}
+
+.footer__updateSection .button:hover{
+    cursor: pointer;
+}
+
+/* footer End */
+
+@media screen and (max-width: 375px) {
+
+    /* Mobile Header Start */
+
+    html{
+        font-size: 75%;
+    }
+
+    .header {
+        padding: 2rem 1rem;
+    }
+
+    .header__ul, .header div .button {
+        display: none;
+    }
+    
+    .burger {
+        display: initial;
+    }
+    
+
+    /* Mobile Header End */
+    /* Mobile Main Start */
+    /*   Mobile Main Start */
+
+    .firstSection, .secondSection {
+    flex-flow: column wrap;
+    gap: 0rem;
+    text-align: center;
+    width: 100%;
+    }
+
+    /* Mobile firsSection Start */
+
+    .firstSection {
+        padding: 0rem 2rem;
+    }
+
+    .firstSection__info, .firstSection__graphs {
+        padding: 1rem 0rem 1rem 0rem;
+        width: 100%;
+    }
+
+    .firstSection p {
+        padding: 0;
+        width: 100%;
+    }
+
+    .firstSection .button {
+        margin: auto;
+    }
+
+    .firstSection__info {
+        order: 1;
+    }
+    
+    .firstSection__graphs{
+        order: 0;
+    }
+
+    /* Mobile firstSection End */
+    /* Mobile seconSection Start */
+
+    .secondSection {
+        padding: 3rem 0rem 0rem 0rem;
+    }
+
+    .secondSection__info {
+        flex-direction: column;
+        padding: 0rem 2rem;
+        width: 100%;
+    }
+
+    .secondSection__info p {
+        padding: 0rem 0rem 2.5rem 0rem;
+    }
+
+    .secondSection__list{
+        padding-left: 1rem;
+        width: 100%;
+    }
+
+    .secondSection__itemTitle{
+        background-color: var(--sixthColor);
+        margin-left: -1rem;
+        padding: 0.4rem 0rem 0rem 1.5rem;
+        text-align: left;
+        width: 88%;
+        z-index: -1;
+    }
+
+    .secondSection__itemInfo{
+        padding: 1rem 2rem 3.5rem 0rem;
+        text-align: left;
+    }
+    
+    /* Mobile secondSection End */
+    /* Mobile thirdSection End */
+
+    .thirdSection {
+        padding: 0rem 1rem 1rem;
+    }
+
+    .card:nth-child(1) {
+        display: none;
+    }
+
+    .card:nth-child(3) {
+        display: none;
+    }
+
+    .card {
+        padding-top: 2rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .card__body {
+        padding: 0rem 2rem 2rem;
+        width: 100%;
+    }
+
+    .card__photo {
+        left: 43%;
+    }
+
+    .thirdSection a {
+        left: 35%;
+    }
+    
+    /*  Mobile thirdSection End */
+    /* Mobile fourthSection Start */
+
+    .fourthSection {
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 3rem;
+        padding: 3rem 2rem;
+    }
+
+    .fourthSection h2 {
+        padding-bottom: 2rem;
+        text-align: center;
+        width: 85%;
+    }
+
+    /* Mobile fourthSection End */
+    /* Mobile footer Start */
+
+    .footer {
+        padding: 1rem;
+    }
+
+    .footer__principal {
+        align-content: center;
+        flex-direction: column;
+
+    }
+
+    .footer__updateSection {
+        margin: auto;
+        order:-2;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .footer__linkSection {
+        gap: 6rem;
+        margin: auto;
+        order:-1;
+    }
+
+    .footer__logoSection {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .footer__icons {
+        font-size: 1.5rem;
+        order: -1;
+        padding-top: 1rem;
+    }
+
+    .footer__logoTitle{
+        margin: auto;
+        order: 1;
+        padding: 2rem;
+    }
+
+    .footer p {
+        text-align: center;
+    }
+
+}
